@@ -44,7 +44,7 @@ def match_employees():
     # Weights: 80% partial match, 20% embedding similarity
     WEIGHT_PARTIAL = 0.8
     WEIGHT_EMBEDDING = 0.2
-
+ 
     combined_scores = []
     for i, emp in enumerate(employees):
         partial_score, matched_skills = partial_match(query_skills, emp["skills"])
